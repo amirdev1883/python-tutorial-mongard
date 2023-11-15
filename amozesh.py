@@ -8,8 +8,12 @@
     #amal haiye riyazi dar python (zarb  *  , jam  +  , tafrigh  -  , taghsim  /  , tavan  **  )
     #braye inke hasel taghsim be sorat yek adad gheir ashara bashad az // estefade mi konim
 
-#print ( 15/2)
-#print ( 15//2)
+# print(15/2)
+# print(15//2)
+# a = 15/2
+# a = round(a)
+# print(a)
+
 
     #sting ha ro mishe ba   '   ,   "   zakhire kard
     #backe eslash dar string baes skip mishavad manand mesale payin ye jor bi mana kardaneshe
@@ -22,7 +26,6 @@
 
     #dar code bala mitonim az  "  ham estefade konim
 # \n   be manaye newline ast
-
 #print ('amir \n abbas')
 
     #braye gheier faal kardane \n az yek eslash digar estefade mikonim
@@ -38,7 +41,7 @@
 
 #a= "amir"
 #b= "abbas"
-#print (a +b)
+#print(a+b)
 
 #a= "10"
 #a=  10
@@ -46,38 +49,43 @@
     #in do fargh darand , avali a yek sting ast v dovomi yek intijer
     #dar python nmi shavad string ra ba intijer jam kard
 
-#print ("hello " 'world')
+# print("hello " 'world')
 
     #code bala dorost ast
     #braye neveshtane yek string boland mitavanid kare zir ra anjam dahid
 
-#name = 'Hello my name is amir'\
+# name = 'Hello my name is amir'\
 #       'nice to meet you'\
 #       'what is your name'
-#print (name)
+# print (name)
 
 #name = ('Hello , my name is amiabbas'
 #        'nice to meet you'
 #        'what is your name ')
+# name = '''
+# Hello , my name is amiabbas
+# nice to meet you
+# what is your name
+# '''
+
 #print (name)
 
-    #charactery darim be name   len   ke mokhaffafe lengt ast
+    #charactery darim be name   len   ke mokhaffafe length ast
 
-#name = 'salam man amir abbas          ast'
-#print (len(name))
-
+# name = 'salam man amir abbas          ast'
+# print (len(name))
     #ba bracet mitanim teke iy az string khod ra chap konim
 
-#x = '0123456789'
-#print ( x [0])
-#print ( x [-1])
-#print ( x [2:4])
-#print ( x [-5:-1])
-#print ( x [-5: ])
-#print ( x [ : 8 ])
-#print ( x [0:9:2])
-#print ( x [0:9:3])
-#print ( x [0:9:1])
+# x = '0123456789'
+# print ( x [0])
+# print ( x [-1])
+# print ( x [2:4])
+# print(x[-5:-1])
+# print ( x [-5: ])
+# print ( x [ : 8 ])
+# print ( x [0:9:2])
+# print ( x [0:9:3])
+# print ( x [0:9:1])
 
     #string ha gheyr ghabele taghiyir hastan be estelah immutable ast
 #---------------------------------------------------------------------------------------------------------------------
@@ -89,7 +97,7 @@
 
 # names = []
 # print (names)
-#print (type (names))   #khoroghi in   <class list>   ast
+# print (type (names))   #khoroghi in   <class list>   ast
 
 # x = ['amir' , 'abbas' , 'ali' , 'iman'  , 12 , 12.22 ]
 # print ( x [ : ])
@@ -105,15 +113,15 @@
 
     #mitavanim ba append yek meghdar ra be listeman ezafe konim
 
-# names = ['ali' , 'amir abbas' , 'iman' , 'ghaghaly' , 'mohammad']
-# names.append('ali zia')
+# names = ['ali' , 'amir abbas' , 'iman' , 'ghaghaly' , 'mohammad' ]
+# names.append('ali lala')
 # print (names)
 # print (len(names))
 
     #baraye hazf kardane bakhshi az list an ra mosavi ba khali gharar midahim
 
 # names = ['ali' , 'amir abbas' , 'iman' , 'ghaghaly' , 'mohammad']
-# names [0:2] = []
+# names[0:2] = []
 # print (names)
 
 # len braye list ham estefade mishavad
@@ -152,9 +160,9 @@
     #bolean bool  --> True , False
 
 # if True :
-#     print ('greater tahn 30')
+#     print ('greater than 30')
 # if False :
-#     print('greater tahn 10')
+#     print('greater than 10')
 
     #dar ghesmate bala bayad avale horofe true v false bayad capytal bashad
 #---------------------------------------------------------------------------------------------------------------------
@@ -217,7 +225,7 @@
 # for x in names :
 #     print (x)
 # else :
-#     print ('End....')           #halghe zamani ke adi tamam shavad akhar halghe else ejra mi shavad
+#     print ('End....')           #halghe zamani ke be akharin draye miresad else ejra mi shavad
 
     #agar dar codeman breack dashte bashim else ejra nemi shavad
 
@@ -344,7 +352,7 @@
 # n = ['amirabbas']
 # t = ('amir')
 # print (type(n))            #khorojy class list  ast
-# print (type(t))            #khorojy class tuple ast
+# print (type(t))            #khorojy class str ast
 
 #braye shenasandane t be onvane tuple kar paiyn ra anjam midahim
 
@@ -368,7 +376,7 @@
 #2.na monazam ast v tartibe vorode etelaat ra hefz nmi konad
 
 # names ={'amir' , 'abbas' , 'ali' , 'iman' ,'amir' , "amir" , 'amir' , 'amir' , 'Amir'}
-# print (names)                   #agar chand bar khorojy begirim mibinim ke khorojo ha fargh darn v sabet nistand
+# print (names)                   #agar chand bar khorojy begirim mibinim ke khorojy ha fargh darn v sabet nistand
 
 # x = { 1 , 2 , 3 , 4 , 5}
 # if 1 in x:
@@ -409,7 +417,7 @@
 # print ( 'amir' in tel)
 # print ('mohammad' in tel)
 # print ('jack' in tel )
-# print (20 in tel)                 #neshan midahad ke hamchin key vjod darad dar dictonary ma 
+# # print (20 in tel)                 #neshan midahad ke hamchin key vjod darad dar dictonary ma 
 # print (tel.items())
 # print ('-----------------------------------\n')
 # for i in tel.items():
@@ -596,28 +604,24 @@
 #     print(a)
 #     a = 10
 
+
 # a_ra_neshan()
 
 #UnboundLocalError: local variable 'a' referenced before assignment
 #eror code bala
 
-a = 10 
-def a_ra_neshan():
-    global a 
-    print(a)
-    a = 20
+# a = 10 
+# def a_ra_neshan():
+#     global a 
+#     print(a)
+#     a = 20
 
-a_ra_neshan()
-print(a)
+# a_ra_neshan()
+# print(a)
 
-
-
-
-
-
-
-
-
+#khorojy code bala
+# 10
+# 20
 
 
 #mafhome scope ha ra be khobi yad begirid
@@ -625,7 +629,7 @@ print(a)
 #--------------------------------------------------------------------------------------------------------------------
 #--------------------------------------------------------------------------------------------------------------------
 
-                                        #OOP (Object_oriented programing)
+                                        #OOP (Object_oriented_programing)
 
 #raveshi ke be shoma komak mi konad tamiz tar code bezanid
 #braye modiryat kardane code haye shoma
@@ -638,7 +642,7 @@ print(a)
 #
 # a.name ='pride'    #be migan attribute ya property
 # b.name ='benz'
-#
+
 # a.price = 100       #be in migan dot notation   ke ba noghte be vizegi hash ezafe kardim ya dastresy peyda kardim
 # b.price = 900
 #
@@ -651,9 +655,9 @@ print(a)
 #--------------------------------------------------------------------------------------------------------------------
 #--------------------------------------------------------------------------------------------------------------------
 
-                                             #method haye oop
+                                             # method haye oop
 
-# method haman function hast faght dar class gharar gerefte ast
+#method haman function hast faght dar class gharar gerefte ast
 #hich farghy ba function nadarad v baraye tamiz neveshtane code haman estefade mi shavad
 
 # class car :
@@ -664,7 +668,7 @@ print(a)
 #
 # a = car()
 #
-# a.show()             #inja darim  a  ra be tabe ersal mikonim v agar dakhele tabe agomany nabashd eror braye ma mi ayad
+# a.show()             #inja darim  a  ra be tabe ersal mikonim v agar dakhele tabe argomany nabashd eror braye ma mi ayad
 # print(a)
 
 #dar class haye python yek sery method khosash darad ke kare ma ra rahat tar mi konad
@@ -778,7 +782,7 @@ print(a)
 #--------------------------------------------------------------------------------------------------------------------
 #--------------------------------------------------------------------------------------------------------------------
 
-# import datetime                                       #built in   ast
+# import datetime                                    #built in   ast
 #
 # result = datetime.datetime.now()
 # result1 = datetime.datetime.now().year   -  18       #data ha ra mitavan kam v ziyad ham kard
