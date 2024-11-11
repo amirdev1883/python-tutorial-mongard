@@ -24,3 +24,36 @@ Among programming languages, Python is one of the easiest to learn. Its readabil
 
 ## 🧑‍🏫 Who is this Basic Python Course For?
 This Python course is **perfect for beginners with no prior knowledge of programming** or Python and requires no prerequisites. It covers everything you need to start learning Python. The course begins with a brief introduction to Python and IDEs, then dives into Python fundamentals. Starting with **variables** — the simplest concept — we progress to advanced topics like **object-oriented programming** and **inheritance**. After completing this course, you’ll be ready to tackle more complex Python topics.
+
+# 🐍 Creating Variables in Python
+
+Python is a **dynamically typed** language, meaning you don’t need to specify the type of a variable when creating it. There’s no need to define a variable's type before using it — the **Python interpreter** determines the type automatically. A variable is created the moment you assign a value to it for the first time.
+
+## ➡️ Creating a New Variable
+
+To create a new variable, you use the **equals sign** (`=`). Take a look at the example below:
+
+```python
+>>> n = 300
+```
+In the example above, we stored the numeric value 300 in a variable named n. Now, you can use this variable in your program:
+
+```python
+>>> print(n)
+300
+```
+🔍 Determining the Variable Type
+When assigning a value to a variable, Python automatically determines the variable type. For example, in the code above, the Python interpreter knows that n holds a number. To check the variable type, you can use the type function:
+
+```python
+>>> n = 300
+>>> type(n)
+<class 'int'>
+```
+If you store a string in a variable, the Python interpreter will determine the variable type as str:
+
+```python
+>>> m = 'amir'
+>>> type(m)
+<class 'str'>
+```
