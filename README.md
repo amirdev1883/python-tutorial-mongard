@@ -57,3 +57,93 @@ If you store a string in a variable, the Python interpreter will determine the v
 >>> type(m)
 <class 'str'>
 ```
+
+# 🔄 Changing Variable Values in Python
+
+Unlike **statically typed** languages where a variable’s type is fixed, in Python, you can change a variable's type. For example, if a variable holds a number, you can change it to other types like a **string** or **dictionary**.
+
+Consider the following code:
+
+```python
+>>> n = 300
+>>> n = 'amir'
+>>> n
+'amir'
+```
+As shown above, the variable n initially held a number, but we were able to change it to a string.
+
+❌ Deleting Variables in Python
+In Python, you can delete variables using the del statement. After deleting a variable, you can no longer use it; attempting to do so will result in an error:
+
+```python
+>>> n = 300
+>>> del n
+>>> n
+```
+NameError: name 'n' is not defined
+As you can see, using a deleted variable triggers a NameError, indicating the variable no longer exists. Typically, programmers don’t need to delete variables manually since Python’s interpreter can automatically identify and remove unused variables to save memory.
+
+🔗 Multiple Variable Assignment in Python
+Python provides special techniques to create multiple variables simultaneously. For instance, you can create multiple variables on a single line using commas:
+
+```python
+>>> a, b = 100, 200
+>>> a
+100
+>>> b
+200
+```
+You can even create more than two variables with different data types:
+
+```python
+>>> a, b, c = 0.1, 100, 'string'
+```
+If there’s only one variable on the left side, a tuple is created:
+
+```python
+>>> a = 100, 200
+>>> a
+(100, 200)
+>>> type(a)
+<class 'tuple'>
+```
+If the number of variables and values doesn’t match, a ValueError will occur. However, by using the asterisk (*) operator, you can store the extra values as a list in a variable:
+
+```python
+>>> a, b = 100, 200, 300
+ValueError: too many values to unpack (expected 2)
+
+>>> a, b, c = 100, 200
+ValueError: not enough values to unpack (expected 3, got 2)
+
+>>> a, *b = 100, 200, 300
+>>> a
+100
+>>> type(a)
+<class 'int'>
+
+>>> b
+[200, 300]
+>>> type(b)
+<class 'list'>
+
+>>> *a, b = 100, 200, 300
+>>> a
+[100, 200]
+>>> type(a)
+<class 'list'>
+
+>>> b
+300
+>>> type(b)
+<class 'int'>
+```
+Another trick for creating multiple variables with the same value is to use the equals sign (=) consecutively:
+
+```python
+>>> a = b = 100
+>>> a
+100
+>>> b
+100
+```
